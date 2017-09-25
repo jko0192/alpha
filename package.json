@@ -1,7 +1,7 @@
 {
-  "name": "boilermaker",
+  "name": "alpha",
   "version": "1.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Spotify Clone Turned Into Alpha!",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -27,10 +27,12 @@
     "morgan": "^1.8.1",
     "passport": "^0.3.2",
     "passport-google-oauth": "^1.0.0",
+    "passport-spotify": "^0.3.1",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
     "prop-types": "^15.5.8",
     "react": "^15.4.2",
+    "react-audio-player": "^0.6.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "react-router": "^4.1.1",
@@ -54,7 +56,7 @@
     "enzyme": "^2.8.2",
     "file-loader": "^0.11.2",
     "mocha": "^3.3.0",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.5.3",
     "react-test-renderer": "^15.6.1",
     "redux-mock-store": "^1.2.3",
     "sass-loader": "^6.0.0",

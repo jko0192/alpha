@@ -1,5 +1,5 @@
-import axios from 'axios'
-import history from '../history'
+import axios from 'axios';
+import history from '../history';
 
 /**
  * ACTION TYPES
@@ -10,7 +10,7 @@ const REMOVE_USER = 'REMOVE_USER'
 /**
  * INITIAL STATE
  */
-const defaultUser = {}
+const spotifyUser = {};
 
 /**
  * ACTION CREATORS
@@ -25,7 +25,7 @@ export const me = () =>
   dispatch =>
     axios.get('/auth/me')
       .then(res =>
-        dispatch(getUser(res.data || defaultUser)))
+        dispatch(getUser(res.data || spotifyUser)))
       .catch(err => console.log(err))
 
 export const auth = (email, password, method) =>
@@ -50,12 +50,12 @@ export const logout = () =>
 /**
  * REDUCER
  */
-export default function (state = defaultUser, action) {
+export default function (state = spotifyUser, action) {
   switch (action.type) {
     case GET_USER:
       return action.user
     case REMOVE_USER:
-      return defaultUser
+      return spotifyUser;
     default:
       return state
   }

@@ -1,12 +1,21 @@
-const crypto = require('crypto')
-const Sequelize = require('sequelize')
-const db = require('../db')
+const crypto = require('crypto');
+const Sequelize = require('sequelize');
+const db = require('../db');
 
 const User = db.define('user', {
+  spotifyId: {
+    type: Sequelize.STRING
+  },
+  name: {
+    type: Sequelize.STRING,
+  },
   email: {
     type: Sequelize.STRING,
     unique: true,
     allowNull: false
+  },
+  followers: {
+    type: Sequelize.INTEGER,
   },
   password: {
     type: Sequelize.STRING
@@ -14,12 +23,12 @@ const User = db.define('user', {
   salt: {
     type: Sequelize.STRING
   },
-  googleId: {
+  accessToken: {
     type: Sequelize.STRING
   }
 })
 
-module.exports = User
+module.exports = User;
 
 /**
  * instanceMethods

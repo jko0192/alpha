@@ -19,3 +19,258 @@ body {
     display: inline-block;
   }
 }
+
+
+
+/*
+  ============================================
+              alpha Navigation Bar
+  ============================================
+*/
+
+.alpha-background {
+  background-color: black;
+  border-bottom: 5px solid darkgray;
+  color: azure;
+  text-align: center;
+}
+
+.alpha-title {
+  letter-spacing: .125em;
+  font-size: 2.6em;
+  font-weight: 600;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.spotify-auth-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.spotify-auth-link:hover {
+  color: darkcyan;
+}
+
+.alpha-logo {
+  width: 50px;
+  padding-right: 15px;
+}
+
+/*
+  ====================================
+            Alpha Home Page
+  ====================================
+*/
+
+.alpha-container {
+  background-image: url("https://images.alphacoders.com/633/633467.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.alpha-before-login {
+  padding: 20px;
+  text-align: center;
+}
+
+.alpha-before-login h1 {
+  font-size: 2.7em;
+  color: azure;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 100px;
+  letter-spacing: .1em;
+}
+
+.alpha-before-login h3 {
+  font-size: 1.4em;
+  color: azure;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  font-weight: 600;
+}
+
+.alpha-before-login-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.alpha-input-div label {
+  font-size: 1.6em;
+  color: azure;
+  padding-bottom: 10px;
+}
+
+.alpha-input-div input {
+  width: 20%;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+.alpha-login-button button {
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  color: azure;
+  padding: 5px 9px;
+  font-weight: 600;
+}
+
+.alpha-error-message {
+  color: lightcoral;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.alpha-spotify-connection {
+  text-decoration: none;
+  padding-top: 20px;
+  font-size: 1em;
+  color: azure;
+  font-weight: 600;
+}
+
+.alpha-spotify-connection:hover {
+  color: darkcyan;
+}
+
+.alpha-before-login button {
+  font-size: 35px;
+  padding: 8px 12px;
+  background-color: lightgreen;
+  border: 5px solid azure;
+  color: azure;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/*
+  ===================================
+        G-Spot User Profile
+  ===================================
+*/
+.spotify-user-profile {
+  background-image: url("http://www.infoom.se/bilder_till_hemsida/circle-dark-design__000000_center_top_fix.jpg");
+  background-position: center;
+  border: 6px solid black;
+  color: azure;
+  padding: 20px;
+}
+
+.spotify-welcome-tag {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: azure;
+}
+
+
+.spotify-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: -160px;
+}
+
+.spotify-user-info p {
+  flex-grow: 1;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.spotify-user-info p:first-child {
+  margin-left: 40px;
+}
+
+/* 
+  ==============================================
+              G-Spot Playlist
+  ==============================================
+*/
+
+.spotify-playlist {
+  text-align: center;
+  border: 6px solid darkgrey;
+  background-color: black;
+  color: azure;
+  padding: 20px;
+}
+
+.alpha-playlist h3 {
+  font-size: 1.8em;
+  border-bottom: 5px solid lightgreen;
+  border-top: 5px solid #E4E43D;
+  padding: 15px;
+  font-weight: 600;
+}
+
+
+.alpha-playlist form label {
+  font-size: 1.8em;
+  margin-bottom: 2px;
+}
+
+.alpha-playlist form input {
+  margin-bottom: 40px;
+  width: 20%;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.alpha-playlist form button {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  color: azure;
+  padding: 5px 9px;
+  font-weight: 600;
+}
+
+.alpha-item {
+  text-align: center;
+}
+
+.alpha-playlist-live {
+  text-align: left;
+  width: 20%;
+  display: inline-block;
+  margin: 0 90px;
+  margin-top: 50px;
+}
+.alpha-playlist-live h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.alpha-playlist-live img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 6px solid azure;
+}
+
+.alpha-audio-button {
+  border-radius: 10px;
+  background-color: lightgreen;
+  padding: 5px 9px;
+}
+
+.alpha-delete {
+  background-color: lightcoral;
+  font-size: 30px;
+  border-radius: 10px;
+  color: azure;
+  padding: 5px 9px;
+  margin-top: 16px;
+  font-weight: 600;
+}

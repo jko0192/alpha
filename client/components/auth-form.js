@@ -8,24 +8,28 @@ import {auth} from '../store'
  */
 const AuthForm = (props) => {
   const {name, displayName, handleSubmit, error} = props
-
   return (
-    <div>
-      <form onSubmit={handleSubmit} name={name}>
-        <div>
-          <label htmlFor='email'><small>Email</small></label>
-          <input name='email' type='text' />
+    <div className ="alpha-container">
+        <div className = "alpha-before-login">
+          <h1>Welcome to Alpha</h1>
+          {/* <h3>Create an Account</h3>
+          <form onSubmit={handleSubmit} name={name} className = "alpha-before-login-form">
+            <div className = "alpha-input-div">
+              <label htmlFor='email'><small>Email:</small></label>
+              <input name='email' type='text' placeholder="Enter Email" />
+            </div>
+            <div className = "alpha-input-div">
+              <label htmlFor='password'><small>Password:</small></label>
+              <input name='password' type='password' placeholder="Enter Password"/>
+            </div>
+            <div className ="alpha-login-button">
+              <button type='submit'>{displayName}</button>
+            </div>
+            {error && error.response && <div className="alpha-error-message"> {error.response.data} 
+            </div>}
+          </form> */}
+          <button><a href='/auth/spotify' className="alpha-spotify-connection">{displayName} with Spotify</a></button>
         </div>
-        <div>
-          <label htmlFor='password'><small>Password</small></label>
-          <input name='password' type='password' />
-        </div>
-        <div>
-          <button type='submit'>{displayName}</button>
-        </div>
-        {error && error.response && <div> {error.response.data} </div>}
-      </form>
-      <a href='/auth/google'>{displayName} with Google</a>
     </div>
   )
 }

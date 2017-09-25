@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {withRouter, Link} from 'react-router-dom'
-import {logout} from '../store'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {withRouter, Link} from 'react-router-dom';
+import {logout} from '../store';
 
 /**
  * COMPONENT
@@ -10,29 +10,29 @@ import {logout} from '../store'
  *  else common to our entire app. The 'picture' inside the frame is the space
  *  rendered out by the component's `children`.
  */
+
 const Main = (props) => {
-  const {children, handleClick, isLoggedIn} = props
+  const {userId, children, handleClick, isLoggedIn} = props
 
   return (
-    <div>
-      <h1>BOILERMAKER</h1>
-      <nav>
+    <div className = "alpha-background">
+      <img className = "alpha-logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Antu_spotify.svg/2000px-Antu_spotify.svg.png" />
+      <h1 className="alpha-title">Alpha</h1>
+      <nav className = "spotify-auth-bar">
         {
           isLoggedIn
             ? <div>
               {/* The navbar will show these links after you log in */}
-              <Link to='/home'>Home</Link>
-              <a href='#' onClick={handleClick}>Logout</a>
+              <Link to='/home' className ="spotify-auth-link">Home</Link>
+              <a href='#' onClick={handleClick} className = "spotify-auth-link">Logout</a>
             </div>
             : <div>
               {/* The navbar will show these links before you log in */}
-              <Link to='/login'>Login</Link>
-              <Link to='/signup'>Sign Up</Link>
+              <Link to='/login' className = "spotify-auth-link">Login</Link>
+              <Link to='/signup' className = "spotify-auth-link">Sign Up</Link>
             </div>
         }
       </nav>
-      <hr />
-      {children}
     </div>
   )
 }
@@ -42,7 +42,8 @@ const Main = (props) => {
  */
 const mapState = (state) => {
   return {
-    isLoggedIn: !!state.user.id
+    isLoggedIn: !!state.user.id,
+    userId: state.user.id
   }
 }
 
